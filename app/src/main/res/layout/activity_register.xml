@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="#F4F8F0">
+
+    <!-- Icône -->
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_menu_myplaces"
+        android:tint="#2E7D32"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Titre -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer un compte"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrez-vous pour synchroniser vos plantes"
+        android:textColor="#888888"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Pseudo -->
+
+    <EditText
+        android:id="@+id/etPseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pseudonyme"
+        android:drawableStart="@android:drawable/ic_menu_myplaces"
+        android:padding="12dp"/>
+
+    <!-- Email -->
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse Email"
+        android:drawableStart="@android:drawable/ic_dialog_email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Mot de passe -->
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Confirmation -->
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmer le mot de passe"
+        android:drawableStart="@android:drawable/checkbox_on_background"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Bouton inscription -->
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="S'INSCRIRE"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Lien connexion -->
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Déjà inscrit ? Se connecter"
+        android:textColor="#2E7D32"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+    <!-- Bouton retour -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRetour"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:src="@android:drawable/ic_media_previous"
+        app:backgroundTint="#444444"
+        app:tint="@android:color/white"/>
+
+</LinearLayout>

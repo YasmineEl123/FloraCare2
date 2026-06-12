@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulaire Plante"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imgPlant"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:background="#E8F5E9"/>
+
+        <!-- Boutons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📷 Caméra"
+                android:backgroundTint="#388E3C"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="🖼 Galerie"
+                android:backgroundTint="#388E3C"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <!-- Nom -->
+
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Nom personnalisé de la plante"/>
+
+        <!-- Espèce -->
+
+        <EditText
+            android:id="@+id/etEspece"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Espèce botanique"/>
+
+        <!-- Fréquence -->
+
+        <EditText
+            android:id="@+id/etFrequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Fréquence d'arrosage"
+            android:inputType="number"/>
+
+        <!-- Texte -->
+
+        <TextView
+            android:id="@+id/txtDernier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dernier arrosage : Aujourd'hui"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Enregistrer / Annuler -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ENREGISTRER"
+                android:backgroundTint="#2E7D32"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="ANNULER"/>
+
+        </LinearLayout>
+
+        <!-- Bouton retour -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnRetour"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:src="@android:drawable/ic_media_previous"
+            app:backgroundTint="#424242"
+            app:tint="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="#F4F8F0">
+
+    <!-- Icône -->
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_lock_lock"
+        android:tint="#2E7D32"
+        android:layout_marginTop="60dp"/>
+
+    <!-- Titre -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accédez à votre journal FloraCare"
+        android:textColor="#888888"
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Email -->
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Identifiant ou Email"
+        android:drawableStart="@android:drawable/ic_menu_myplaces"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Mot de passe -->
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Bouton -->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CONNEXION"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Inscription -->
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pas de compte ? S'inscrire"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="25dp"/>
+
+    <!-- Bouton retour -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRetour"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:src="@android:drawable/ic_media_previous"
+        app:backgroundTint="#444444"
+        app:tint="@android:color/white"/>
+
+</LinearLayout>
